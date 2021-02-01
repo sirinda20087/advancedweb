@@ -6,7 +6,7 @@ from flask_marshmallow import Marshmallow
 app = Flask(__name__)
 
 #database
-app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://webadmin:FMZkon18745@10.100.2.194:5432/CloudDB'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://webadmin:FMZkon18745@10.100.2.193:5432/CloudDB'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 #init db
 db = SQLAlchemy(app)
@@ -96,4 +96,4 @@ def get():
 
 # Run Server
 if __name__ == "__main__":
-    app.run(host='0.0.0.0', port=80)
+    app.run(host='10.100.2.193', port=88)
