@@ -96,4 +96,4 @@ def get():
 
 # Run Server
 if __name__ == "__main__":
-    app.run(host='10.100.2.193', port=88)
+    app.run(host='0.0.0.0', port=80)
